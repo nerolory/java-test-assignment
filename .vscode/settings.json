@@ -1,0 +1,22 @@
+{
+    "code-runner.executorMap": {
+        "java": "powershell -NoProfile -ExecutionPolicy Bypass -File \"$workspaceRoot/run.ps1\""
+    },
+    "code-runner.saveAllFilesBeforeRun": true,
+    "java.server.launchMode": "Standard",
+    "java.jdt.ls.java.home": "C:/Program Files/Java/jdk-26.0.1",
+    "java.configuration.runtimes": [
+        {
+            "name": "JavaSE-26",
+            "path": "C:/Program Files/Java/jdk-26.0.1",
+            "default": true
+        }
+    ],
+    "java.project.resourceFilters": ["node_modules", "\\.git", "\\.deps", "bin", "resources"],
+    "java.project.sourcePaths": ["."],
+    "java.project.outputPath": "bin",
+    "java.project.referencedLibraries": [
+        ".deps/javafx-sdk-26.0.2/lib/*.jar",
+        ".deps/jdbc/*.jar"
+    ]
+}

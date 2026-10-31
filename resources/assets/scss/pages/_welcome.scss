@@ -1,0 +1,16 @@
+@use "../settings/tokens" as t;
+
+.welcome-page {
+  -fx-font-family: t.$font-family;
+  -fx-background-color: t.$color-brand;
+
+  &__body {
+    -fx-background-color: t.$color-surface;
+  }
+
+  &__greeting {
+    -fx-font-family: t.$font-family;
+    -fx-font-size: t.$font-title;
+    -fx-text-fill: t.$color-text;
+  }
+}

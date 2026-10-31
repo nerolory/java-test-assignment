@@ -1,0 +1,70 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "Database: Load probe",
+            "type": "process",
+            "command": "powershell",
+            "args": ["-NoProfile", "-ExecutionPolicy", "Bypass", "-File", "${workspaceFolder}/scripts/test-load.ps1"],
+            "problemMatcher": []
+        },
+        {
+            "label": "Database: Migrate",
+            "type": "process",
+            "command": "powershell",
+            "args": ["-NoProfile", "-ExecutionPolicy", "Bypass", "-File", "${workspaceFolder}/scripts/migrate-database.ps1"],
+            "problemMatcher": []
+        },
+        {
+            "label": "Database: Test core",
+            "type": "process",
+            "command": "powershell",
+            "args": ["-NoProfile", "-ExecutionPolicy", "Bypass", "-File", "${workspaceFolder}/scripts/test-database.ps1"],
+            "problemMatcher": []
+        },
+        {
+            "label": "Styles: Build SCSS",
+            "type": "process",
+            "command": "npm.cmd",
+            "args": ["run", "styles:build"],
+            "problemMatcher": []
+        },
+        {
+            "label": "Styles: Watch SCSS",
+            "type": "process",
+            "command": "npm.cmd",
+            "args": ["run", "styles:watch"],
+            "problemMatcher": []
+        },
+        {
+            "label": "Java: Build application",
+            "type": "process",
+            "command": "powershell",
+            "args": ["-NoProfile", "-ExecutionPolicy", "Bypass", "-File", "${workspaceFolder}/run.ps1", "-CompileOnly"],
+            "problemMatcher": []
+        },
+        {
+            "label": "Scene Builder: Open login.fxml",
+            "type": "process",
+            "command": "powershell",
+            "args": [
+                "-NoProfile",
+                "-ExecutionPolicy", "Bypass",
+                "-File", "${workspaceFolder}/open-scene-builder.ps1"
+            ],
+            "problemMatcher": []
+        },
+        {
+            "label": "Scene Builder: Open current FXML",
+            "type": "process",
+            "command": "powershell",
+            "args": [
+                "-NoProfile",
+                "-ExecutionPolicy", "Bypass",
+                "-File", "${workspaceFolder}/open-scene-builder.ps1",
+                "-FxmlPath", "${file}"
+            ],
+            "problemMatcher": []
+        }
+    ]
+}

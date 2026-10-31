@@ -1,0 +1,11 @@
+{
+  "name": "test-app-styles",
+  "private": true,
+  "scripts": {
+    "styles:build": "node scripts/build-styles.cjs",
+    "styles:watch": "node --watch --watch-path=resources/assets/scss scripts/build-styles.cjs"
+  },
+  "devDependencies": {
+    "sass": "^1.106.1"
+  }
+}

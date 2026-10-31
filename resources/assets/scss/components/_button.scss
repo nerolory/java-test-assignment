@@ -1,0 +1,19 @@
+@use "../settings/tokens" as t;
+
+.app-button {
+  -fx-font-family: t.$font-family;
+  -fx-font-size: t.$font-button;
+  -fx-text-fill: t.$color-text;
+  -fx-cursor: hand;
+
+  &--primary {
+    -fx-background-color: t.$color-accent;
+
+    &:hover { -fx-background-color: t.$color-accent-hover; }
+    &:pressed { -fx-background-color: t.$color-accent-pressed; }
+    &:focused {
+      -fx-border-color: t.$color-focus;
+      -fx-border-width: 1px;
+    }
+  }
+}

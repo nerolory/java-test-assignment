@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.VBox?>
+
+<BorderPane prefHeight="480.0" prefWidth="700.0" styleClass="welcome-page"
+    stylesheets="@../../assets/css/app.css" xmlns="http://javafx.com/javafx/26"
+    xmlns:fx="http://javafx.com/fxml/1" fx:controller="app.controllers.WelcomeController">
+    <top>
+        <fx:include fx:id="header" source="../components/header.fxml" />
+    </top>
+    <center>
+        <VBox alignment="CENTER" spacing="20.0" styleClass="welcome-page__body">
+            <children>
+                <Label fx:id="greetingLabel" text="Добро пожаловать!" styleClass="welcome-page__greeting" maxWidth="660.0" wrapText="true" />
+                <ImageView fx:id="welcomeImage" fitWidth="360.0" fitHeight="170.0" preserveRatio="true" smooth="true">
+                    <image>
+                        <Image url="@../../assets/images/unnamed.png" />
+                    </image>
+                </ImageView>
+                <Button fx:id="logoutButton" text="Выйти" styleClass="o-control, app-button, app-button--primary" prefWidth="200.0" prefHeight="39.0" />
+                <Label fx:id="feedbackLabel" styleClass="auth-page__feedback" wrapText="true" maxWidth="660.0" />
+            </children>
+        </VBox>
+    </center>
+</BorderPane>

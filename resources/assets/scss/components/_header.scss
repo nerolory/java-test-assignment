@@ -1,0 +1,12 @@
+@use "../settings/tokens" as t;
+
+.app-header {
+  -fx-background-color: t.$color-brand;
+
+  &__title {
+    -fx-font-family: t.$font-family;
+    -fx-font-size: t.$font-title;
+    -fx-font-weight: bold;
+    -fx-text-fill: t.$color-white;
+  }
+}

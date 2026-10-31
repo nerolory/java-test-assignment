@@ -1,0 +1,28 @@
+@use "../settings/tokens" as t;
+
+.auth-page {
+  -fx-font-family: t.$font-family;
+  -fx-background-color: t.$color-brand;
+
+  &__body { -fx-background-color: t.$color-surface; }
+
+  &__feedback {
+    -fx-font-family: t.$font-family;
+    -fx-font-size: 13px;
+    -fx-text-fill: t.$color-error;
+
+    &--success { -fx-text-fill: t.$color-success; }
+  }
+
+  &__hint {
+    -fx-font-family: t.$font-family;
+    -fx-font-size: 13px;
+    -fx-text-fill: t.$color-text;
+  }
+
+  &__title {
+    -fx-font-family: t.$font-family;
+    -fx-font-size: t.$font-title;
+    -fx-text-fill: t.$color-text;
+  }
+}

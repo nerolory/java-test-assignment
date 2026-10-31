@@ -1,0 +1,18 @@
+@use "../settings/tokens" as t;
+
+.field {
+  -fx-font-family: t.$font-family;
+  -fx-font-size: t.$font-body;
+  -fx-background-color: t.$color-surface;
+  -fx-text-fill: t.$color-text;
+  -fx-prompt-text-fill: #737373;
+  -fx-border-color: t.$color-border;
+
+  &:focused {
+    -fx-border-color: t.$color-focus;
+  }
+
+  &:invalid {
+    -fx-border-color: t.$color-error;
+  }
+}

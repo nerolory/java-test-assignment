@@ -1,0 +1,11 @@
+.deps/
+bin/
+dist/
+node_modules/
+.local/
+*.log
+database/*.db
+database/*.db-journal
+database/*.db-wal
+database/*.db-shm
+database/*.db.backup-*

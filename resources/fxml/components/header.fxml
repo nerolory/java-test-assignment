@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="109.0" prefWidth="700.0" styleClass="app-header"
+    stylesheets="@../../assets/css/app.css" xmlns="http://javafx.com/javafx/26"
+    xmlns:fx="http://javafx.com/fxml/1" fx:controller="app.controllers.HeaderController">
+    <children>
+        <Label styleClass="app-header__title" fx:id="titleLabel" layoutX="292.0" layoutY="35.0" text="TEST APP">
+        </Label>
+        <StackPane fx:id="actionContainer" layoutX="495.0" layoutY="35.0" prefHeight="30.0" prefWidth="191.0" />
+    </children>
+</AnchorPane>

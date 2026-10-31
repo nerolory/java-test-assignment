@@ -1,0 +1,8 @@
+@use "../settings/tokens" as t;
+
+// OOCSS: reusable geometry, independent of color and component placement.
+.o-control {
+  -fx-background-radius: t.$radius-control;
+  -fx-border-radius: t.$radius-control;
+  -fx-alignment: center;
+}
